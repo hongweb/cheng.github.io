@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>cheng简历封面</title>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/home.css" />
+
+</head>
+
+<body>
+	<div>
+    	<div class="menu">
+        	<ul>
+            	<li><a href="index.html">首页</a></li>
+                <li><a href="resume.html" target="_blank">简历</a></li>
+                <li><a href="resume.html#case" target="_blank">案例</a></li>
+                <li><a href="resume.html" target="_blank">联系我</a></li>
+            </ul>
+        </div>
+    	<div class="top_bg" id="div1">
+        	<div class="bg_pic1" id="bg1">
+            </div>
+            <div class="text_bottom" id="text_bottom1">
+                <p>jquery</p>
+            </div>
+            <div class="text_left" id="text_left1">
+                <p>json</p>
+            </div>
+            <div class="text_right" id="text_right1">
+                <p>ajax</p>
+            </div>
+            <div class="text_top" id="text_top1">
+                <p>javascript</p>
+            </div>
+        </div>
+        <div class="top_bg" id="div2">
+        	<div class="bg_pic2" id="bg2">
+            </div>
+            <div class="text_bottom" id="text_bottom2">
+                <p>css3</p>
+            </div>
+            <div class="text_left" id="text_left2">
+                <p>transition</p>
+            </div>
+            <div class="text_right" id="text_right2">
+                <p>transform</p>
+            </div>
+            <div class="text_top" id="text_top2">
+                <p>@font-face</p>
+            </div>
+        </div>
+        <div class="top_bg" id="div3">
+        	<div class="bg_pic3" id="bg3">
+            </div>
+            <div class="text_bottom" id="text_bottom3">
+                <p>html5</p>
+            </div>
+            <div class="text_left" id="text_left3">
+                <p>em&nbsp;&nbsp;&nbsp;rem</p>
+            </div>
+            <div class="text_right" id="text_right3">
+                <p>nav&nbsp;&nbsp;&nbsp;header&nbsp;&nbsp;&nbsp;footer</p>
+            </div>
+            <div class="text_top" id="text_top3">
+                <p>Bootstrap</p>
+            </div>
+        </div>
+        <div class="right_point">
+        	<ul>
+            	<li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+    	$(function(){
+				   
+			var i = 0;
+			$('#div1').css('opacity','1');
+			$('#bg1').addClass('lessen');
+			$('#div2').css('opacity','0');
+			$('#div3').css('opacity','0');
+			$('#text_bottom1,#text_left1,#text_right1,#text_top1').addClass('changeText');
+			i++;
+			setInterval(function(){
+				switch(i){
+				case 0 :
+						$('#div1').css('opacity','1');
+						$('#bg1').addClass('lessen');
+						$('#div2').css('opacity','0');
+						$('#div3').css('opacity','0');
+						$('#bg3').removeClass('lessen');
+						$('#text_bottom1,#text_left1,#text_right1,#text_top1').addClass('changeText');
+						$('#text_bottom3,#text_left3,#text_right3,#text_top3').removeClass('changeText');
+						
+						break;
+				case 1 :
+						$('#div2').css('opacity','1');
+						$('#bg2').addClass('lessen');
+						$('#div1').css('opacity','0');
+						$('#div3').css('opacity','0');
+						$('#bg1').removeClass('lessen');
+						$('#text_bottom2,#text_left2,#text_right2,#text_top2').addClass('changeText');
+						$('#text_bottom1,#text_left1,#text_right1,#text_top1').removeClass('changeText');
+						break;
+				case 2 :
+						$('#div3').css('opacity','1');
+						$('#bg3').addClass('lessen');
+						$('#div1').css('opacity','0');
+						$('#div2').css('opacity','0');
+						$('#bg2').removeClass('lessen');
+						$('#text_bottom3,#text_left3,#text_right3,#text_top3').addClass('changeText');
+						$('#text_bottom2,#text_left2,#text_right2,#text_top2').removeClass('changeText');
+						i = -1;
+						break;
+				
+			}
+			i++;
+			},5000);
+		});
+	</script>
+    
+</body>
+</html>
